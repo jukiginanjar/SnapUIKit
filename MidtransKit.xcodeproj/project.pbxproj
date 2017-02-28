@@ -299,7 +299,6 @@
 		E5093AF61E644F8A00823B7E /* VTPaymentListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F61AE71D145A2B00C93DA0 /* VTPaymentListView.h */; };
 		E5093AF81E644F8A00823B7E /* MidtransTransactionDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F1754B1E13334F0000C019 /* MidtransTransactionDetailViewController.h */; };
 		E5093AFA1E644F8A00823B7E /* MidtransPaymentMethodHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F175511E135DDA0000C019 /* MidtransPaymentMethodHeader.h */; };
-		E5093AFC1E64504700823B7E /* bin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CB96A271E35CC7400A15D72 /* bin.json */; };
 		E5093AFD1E64505100823B7E /* OCRAEXT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E5D23C781D1D096A0069B5F9 /* OCRAEXT.TTF */; };
 		E5093AFE1E64505100823B7E /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00F61AF31D145B4600C93DA0 /* SourceSansPro-Bold.ttf */; };
 		E5093AFF1E64505100823B7E /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00F61AF81D145B4600C93DA0 /* SourceSansPro-Light.ttf */; };
@@ -669,6 +668,7 @@
 		E562532E1E65238100FA72AB /* VTPaymentListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F61AE81D145A2B00C93DA0 /* VTPaymentListView.m */; };
 		E562532F1E65238100FA72AB /* MidtransTransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F1754C1E13334F0000C019 /* MidtransTransactionDetailViewController.m */; };
 		E56253301E65238100FA72AB /* MidtransPaymentMethodHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F175521E135DDA0000C019 /* MidtransPaymentMethodHeader.m */; };
+		E56253321E652A5B00FA72AB /* MidtransCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56253311E652A5B00FA72AB /* MidtransCoreKit.framework */; };
 		E56455031D23A5DB00CE5FA4 /* MidtransUINextStepButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E56455011D23A5DB00CE5FA4 /* MidtransUINextStepButton.h */; };
 		E56455041D23A5DB00CE5FA4 /* MidtransUINextStepButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E56455021D23A5DB00CE5FA4 /* MidtransUINextStepButton.m */; };
 		E56455071D23ABF000CE5FA4 /* VTNoteTitleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E56455051D23ABF000CE5FA4 /* VTNoteTitleLabel.h */; };
@@ -1076,6 +1076,7 @@
 		E5591A451CEF0DB0005A2DB1 /* VTVASuccessStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTVASuccessStatusController.h; sourceTree = "<group>"; };
 		E5591A461CEF0DB0005A2DB1 /* VTVASuccessStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTVASuccessStatusController.m; sourceTree = "<group>"; };
 		E5591A471CEF0DB0005A2DB1 /* VTVASuccessStatusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTVASuccessStatusController.xib; path = ../MidtransKit/VTVASuccessStatusController.xib; sourceTree = "<group>"; };
+		E56253311E652A5B00FA72AB /* MidtransCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MidtransCoreKit.framework; path = Carthage/Build/iOS/MidtransCoreKit.framework; sourceTree = "<group>"; };
 		E56455011D23A5DB00CE5FA4 /* MidtransUINextStepButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidtransUINextStepButton.h; sourceTree = "<group>"; };
 		E56455021D23A5DB00CE5FA4 /* MidtransUINextStepButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidtransUINextStepButton.m; sourceTree = "<group>"; };
 		E56455051D23ABF000CE5FA4 /* VTNoteTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTNoteTitleLabel.h; sourceTree = "<group>"; };
@@ -1195,6 +1196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56253321E652A5B00FA72AB /* MidtransCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1477,6 +1479,7 @@
 		305494991C75A4E700938C17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E56253311E652A5B00FA72AB /* MidtransCoreKit.framework */,
 				008CBE021DA386D900696F4E /* libMidtransCoreKit.a */,
 				E5AA56731DA2679C00DAD851 /* libMidtransCoreKit.a */,
 				E52940701CFEC69A000180D3 /* Security.framework */,
@@ -2643,7 +2646,6 @@
 				E5093AFF1E64505100823B7E /* SourceSansPro-Light.ttf in Resources */,
 				E5093B001E64505100823B7E /* SourceSansPro-Regular.ttf in Resources */,
 				E5093B011E64505100823B7E /* SourceSansPro-Semibold.ttf in Resources */,
-				E5093AFC1E64504700823B7E /* bin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3145,6 +3147,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MidtransKitDynamic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -3171,6 +3177,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MidtransKitDynamic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Core Framework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>MidtransCoreKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MidtransCoreKitDynamic.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>305494391C759FF800938C17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3054949C1C75ABD200938C17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E509396A1E644D6600823B7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50939891E644DE800823B7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E50939A71E644E9A00823B7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E57E37AC1E640AD30099EE82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
