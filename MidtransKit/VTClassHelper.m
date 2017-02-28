@@ -46,15 +46,22 @@
     static dispatch_once_t onceToken;
     static NSBundle *kitBundle = nil;
     dispatch_once(&onceToken, ^{
-        //check if bundle is in dynamic framework
-        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks/MidtransKit.framework/MidtransKit"
-                                                   withExtension:@"bundle"];
-        if (!bundleURL) {
-            bundleURL = [[NSBundle mainBundle] URLForResource:@"MidtransKit"
-                                                withExtension:@"bundle"];
-        }
-        kitBundle = [NSBundle bundleWithURL:bundleURL];
+        kitBundle = [NSBundle bundleWithPath:@"MidtransKit.bundle"];
         
+        if (kitBundle == nil) {
+            // This might be the same as the previous check if not using a dynamic framework
+            NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"MidtransKit" ofType:@"bundle"];
+            kitBundle = [NSBundle bundleWithPath:path];
+        }
+        
+        if (kitBundle == nil) {
+            // This will be the same as mainBundle if not using a dynamic framework
+            kitBundle = [NSBundle bundleForClass:[self class]];
+        }
+        
+        if (kitBundle == nil) {
+            kitBundle = [NSBundle mainBundle];
+        }
     });
     return kitBundle;
 }
